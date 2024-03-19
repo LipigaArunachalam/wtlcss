@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+}
+
+.container {
+    display: flex;
+    height:100%;
+    width: 30cm; 
+    height: 18cm; 
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.sidebar {
+    flex: 0 0 30%; /* Set the sidebar width */
+    background-color: #3dd0bf;
+    padding: 20px;
+    font-size:large;
+}
+
+.content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    background-color:bisque;
+    text-align:center;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+}
+
+/* Hide all sections by default */
+.section {
+    display: none;
+}
+
+/* Style sidebar menu */
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #0a4f44;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f61414; /* Change color on hover */
+}
+
+.content > div {
+    display: none;
+}
+
+/* Show content section based on target */
+.content > div:target {
+    display: block;
+}
+
+.circular-image {
+    border-radius: 50%; 
+  }
+  
+  img {
+    border: 2px solid #000; 
+    max-width: 100%; 
+    width: 200px; 
+    height: 200px;
+    margin-top:70px;
+    margin-left:25px;
+  }
+
+  .i1{
+    border-radius:50%;
+    width:50px;
+    height:50px;
+  }
