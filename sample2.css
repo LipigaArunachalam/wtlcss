@@ -36,13 +36,13 @@ body, html {
 }
 
 .sidebar h2 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 
 .sidebar a {
     text-decoration: none;
     color: #0a4f44;
-    transition: color 0.3s;
+    transition: color 0.3s; /* the colour of the text will be changed after the given timing */
 }
 
 .sidebar a:hover {
@@ -50,16 +50,16 @@ body, html {
 }
 
 .content > div {
-    display: none; /* when the webpage is opende
+    display: none; /* when the webpage is opened no content will be loaded*/
 }
 
 
 .content > div:target {
-    display: block;
+    display: block; /*only when the respective link is clicked the content will be displayed*/
 }
 
 .circular-image {
-    border-radius: 50%; 
+    border-radius: 50%; /* to ontain round image*/
   }
   
   img {
