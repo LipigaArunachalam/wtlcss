@@ -6,7 +6,7 @@ body, html {
 }
 
 .container {
-    display: flex;
+    display: flex; /* used for flexbox*/
     height:100%;
     width: 30cm; 
     height: 18cm; 
@@ -15,14 +15,14 @@ body, html {
 }
 
 .sidebar {
-    flex-basis: 30%; 
+    flex:0 0 30%; /*grow shrink basis*/
     background-color: #3dd0bf;
     padding: 20px;
     font-size:large;
 }
 
 .content {
-    flex: 1;
+    flex: 1; /* grow and shrink is 1 and basis is 0*/
     padding: 20px;
     background-color:bisque;
     text-align:center;
@@ -32,7 +32,7 @@ body, html {
 }
 
 .section{
-    display:none;
+    display:none; /* there will be no content when the page is opened*/
 }
 
 .sidebar h2 {
