@@ -31,6 +31,9 @@ body, html {
     align-items: center;
 }
 
+.section{
+    display:none;
+}
 
 .sidebar h2 {
     margin-bottom: 15px;
