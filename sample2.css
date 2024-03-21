@@ -15,28 +15,23 @@ body, html {
 }
 
 .sidebar {
-    flex: 0 0 30%; /* Set the sidebar width */
+    flex-basis: 30%; 
     background-color: #3dd0bf;
     padding: 20px;
     font-size:large;
 }
 
 .content {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
     padding: 20px;
     background-color:bisque;
     text-align:center;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center content horizontally */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
 }
 
-/* Hide all sections by default */
-.section {
-    display: none;
-}
 
-/* Style sidebar menu */
 .sidebar h2 {
     margin-bottom: 15px;
 }
@@ -48,14 +43,14 @@ body, html {
 }
 
 .sidebar a:hover {
-    color: #f61414; /* Change color on hover */
+    color: #f61414; 
 }
 
 .content > div {
     display: none;
 }
 
-/* Show content section based on target */
+
 .content > div:target {
     display: block;
 }
