@@ -6,7 +6,7 @@ body, html {
 }
 
 .container {
-    display: flex;
+    display: flex; /* used for flexbox*/
     height:100%;
     width: 30cm; 
     height: 18cm; 
@@ -15,14 +15,14 @@ body, html {
 }
 
 .sidebar {
-    flex-basis:30%; 
+    flex-basis:30%;   /*grow shrink basis*/
     background-color: #3dd0bf;
     padding: 20px;
     font-size:large;
 }
 
 .content {
-    flex: 1; 
+    flex: 1; /* grow and shrink is 1 and basis is 0*/
     padding: 20px;
     background-color:bisque;
     text-align:center;
@@ -38,7 +38,7 @@ body, html {
 .sidebar a {
     text-decoration: none;
     color: #0a4f44;
-    transition: color 0.3s;
+    transition: color 0.3s;  /* the colour of the text will be changed after the given timing */
 }
 
 .sidebar a:hover {
@@ -47,16 +47,16 @@ body, html {
 
 
 .content > div {
-    display: none;
+    display: none;  /* there will be no content when the page is opened*/
 }
 
 
 .content > div:target {
-    display: block;
+    display: block;  /* when the webpage is opened no content will be loaded*/
 }
 
 .circular-image {
-    border-radius: 50%; 
+    border-radius: 50%;   /* to ontain round image*/
   }
   
   img {
@@ -69,7 +69,7 @@ body, html {
   }
 
   .i1{
-    border-radius:50%;
+    border-radius:50%;  /* to ontain round image*/
     width:50px;
     height:50px;
     margin-top:12px;
